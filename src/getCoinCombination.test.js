@@ -26,9 +26,14 @@ describe('getCoinCombination', () => {
         expect(coin).toBeGreaterThanOrEqual(0);
       }
 
-      // weighted sum matches input
-      const sum = result[0] * 1 + result[1] * 5 + result[2] * 10 + result[3] * 25;
-      expect(sum).toBe(cents);
+// weighted sum matches input
+const sum =
+  result[0] * 1 +
+  result[1] * 5 +
+  result[2] * 10 +
+  result[3] * 25;
+expect(sum).toBe(cents);
+
     }
   });
 
